@@ -1,0 +1,9 @@
+---
+# tasks file for roles/network-q
+- name: Configuring Network...
+  nmcli:
+    type: ethernet
+    conn_name: '{{ item.conn_name }}'
+    state: absent
+  with_items:
+    - '{{ nmcli_ethernet }}'

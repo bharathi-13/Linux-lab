@@ -1,0 +1,6 @@
+---
+# tasks file for roles/rootpasswd-q
+- name: Modifing root user
+  user:
+    name: root
+    password: "{{ password }}"

@@ -1,11 +1,12 @@
 ---
-- name: Test Play to ping server lab
+- name: Preparing servera.lab.com for exam lab...
   hosts: all
   become: true
-  tasks:
-    - name: pinging the lab
-      ping:
-
-    - name: printing message
-      debug:
-        msg: "the message is printing"
+  vars:
+    repostate: enabled
+  roles:
+    - rootpasswd-q
+  # tasks:
+  #   - name: Printing facts
+  #     debug:
+  #       var: ansible_facts.default_ipv4

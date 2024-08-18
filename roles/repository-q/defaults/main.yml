@@ -1,0 +1,7 @@
+---
+# defaults file for roles/repository-q
+repolist:
+  - appstream
+  - baseos
+  - extras-common
+repostate: disabled
