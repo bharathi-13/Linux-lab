@@ -1,0 +1,16 @@
+---
+# tasks file for roles/selinux-q
+- name: Installing Apache...
+  dnf:
+    name: httpd
+    state: absent
+
+- name: Configuring apache...
+  template:
+    src: httpd.j2
+    dest: /etc/httpd/conf/httpd.conf
+  
+- name: Configuring apache page...
+  template:
+    src: index.html
+    dest: /var/www/html/index.html

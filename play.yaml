@@ -5,7 +5,7 @@
   vars:
     repostate: enabled
   roles:
-    - rootpasswd-q
+    - selinux-q
   # tasks:
   #   - name: Printing facts
   #     debug:
