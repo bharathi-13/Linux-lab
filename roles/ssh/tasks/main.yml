@@ -4,9 +4,3 @@
   template:
     src: sshd_config
     dest: /etc/ssh/sshd_config
-
-- name: Restarting SSH...
-  service:
-    name: sshd
-    state: restarted
-    

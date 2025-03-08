@@ -1,4 +1,4 @@
 ---
 # defaults file for ./roles/root_password_break
-# password: "$1$2qwYeosd$kAPawknNOBImeYfOcUvRz1" # kGM@1234567
-password: "$1$cLszyH3/$8xoBDKc7b7n80hmNNPHrg." # as
+password: "$1$2qwYeosd$kAPawknNOBImeYfOcUvRz1" # kGM@1234567
+# password: "$1$cLszyH3/$8xoBDKc7b7n80hmNNPHrg." # as

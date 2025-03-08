@@ -8,4 +8,4 @@
 - name: Modifying repositories...
   community.general.dnf_config_manager:
     name: "{{ repolist }}"
-    state: enabled
+    state: disabled

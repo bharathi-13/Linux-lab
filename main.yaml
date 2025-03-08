@@ -4,15 +4,16 @@
     # - root_password_break  
     # - package_management
     # - user
-    # - ssh
     # - network_management
     # - lvm
     # - luks
-    # - apache
+    - apache
     # - samba
     # - mysql
+    # - ssh
 
   # tasks:
-  #   - name: Printing info
-  #     debug:
-  #       var: ansible_facts
+  #   - name: Print network interfaces
+  #     ansible.builtin.debug:
+  #       msg: "Network Interface: {{ item }}"
+  #     loop: "{{ ansible_facts.interfaces }}"

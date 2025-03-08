@@ -1,2 +1,27 @@
 ---
 # tasks file for ./roles/apache
+- name: Installing Apache
+  yum:
+    name: httpd
+    state: latest
+
+- name: Starting Apache
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+
+- name: Creating directory
+  file:
+    name: /company
+    state: directory
+
+- name: Copying index.html
+  template:
+    src: index.html
+    dest: /company/index.html
+
+- name: Copy httpd.conf
+  template:
+    src: httpd.conf
+    dest: /etc/httpd/conf/httpd.conf
