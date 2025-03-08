@@ -1,15 +1,16 @@
 - name: Linux Troubleshooting setup script
   hosts: all
   roles:
+    # - root_password_break  
     # - package_management
     # - user
     # - ssh
     # - network_management
     # - lvm
-    # - mysql
-    # - samba
     # - luks
     # - apache
+    # - samba
+    # - mysql
 
   # tasks:
   #   - name: Printing info
