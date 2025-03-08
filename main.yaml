@@ -1,0 +1,17 @@
+- name: Linux Troubleshooting setup script
+  hosts: all
+  roles:
+    # - package_management
+    # - user
+    # - ssh
+    # - network_management
+    # - lvm
+    # - mysql
+    # - samba
+    # - luks
+    # - apache
+
+  # tasks:
+  #   - name: Printing info
+  #     debug:
+  #       var: ansible_facts

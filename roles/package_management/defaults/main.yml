@@ -1,0 +1,12 @@
+---
+# defaults file for ./roles/package_management
+package_list:
+  - samba
+  - samba-common
+  - httpd
+  - mariadb
+
+repolist:
+  - baseos
+  - appstream
+  - extras-common

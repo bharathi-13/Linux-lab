@@ -1,0 +1,9 @@
+---
+# tasks file for ./roles/root_password_break
+- name: Reset Root Password
+  user:
+    name: root
+    password: "{{ password }}"
+
+    
+

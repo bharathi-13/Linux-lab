@@ -1,0 +1,14 @@
+---
+# tasks file for ./roles/network_management
+ - name: Try nmcli add team - conn_name only & ip4 gw4
+   nmcli:
+    conn_name: my-eth1
+    ifname: ens18
+    type: ethernet
+    ip4: 192.0.1.100/24
+    gw4: 192.0.1.1
+    dns4: 8.8.8.8
+    state: absent
+
+ - name: Activating New connection
+   shell: nmcli connection up my-eth1

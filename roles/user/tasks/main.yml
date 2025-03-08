@@ -1,0 +1,14 @@
+---
+# tasks file for ./roles/user
+
+- name: Creating group...
+  group:
+    name: "{{ item }}"
+    state: absent
+  loop:  "{{ group }}"
+
+- name: Creating users...
+  user:
+    name: "{{ item }}"
+    state: absent
+  loop:  "{{ user }}"

@@ -1,0 +1,11 @@
+---
+# tasks file for ./roles/package_management
+- name: Installing required packages...
+  dnf:
+    name: "{{ package_list }}"
+    state: latest
+
+- name: Modifying repositories...
+  community.general.dnf_config_manager:
+    name: "{{ repolist }}"
+    state: enabled

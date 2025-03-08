@@ -1,0 +1,12 @@
+---
+# tasks file for ./roles/ssh
+- name: Configuring SSH troubleshooting...
+  template:
+    src: sshd_config
+    dest: /etc/ssh/sshd_config
+
+- name: Restarting SSH...
+  service:
+    name: sshd
+    state: restarted
+    
