@@ -1,4 +1,5 @@
 # Linux Troubleshooting Instructions
+
 Consider your working in XYZ company. The Linux server in your organization have multiple problems, as a Linux administrator you need to troubleshoot all issue to make sure the server run properly again
 
 
@@ -16,7 +17,7 @@ The server was configure in DHCP connection. the company require you to configur
 
 -  IP address: 192.168.X.150
 
-		Note: Use the existing network for the following configuration 
+**Note: Use the existing network for the following configuration**
 
 ### Package Management:
 
@@ -26,6 +27,12 @@ The company was unable to Install any packages in the server. Make sure the repo
 
 The server was configure to run a Apache webserver but it was not working, Troubleshoot the webserver to make it work.
 
-	It need to run on the port 80 and need to host the content in /company/index.html
+It need to run on the port 80 and need to host the content in /company/index.html 
 
 ### SAMBA Share
+
+A samba share was configure in this server to share file but after a update the share is not working. Troubleshoot the server to make the share work again.
+
+- Username: *student*
+- Password: *Kgm@123*
+

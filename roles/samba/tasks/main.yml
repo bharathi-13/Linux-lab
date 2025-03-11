@@ -1,2 +1,17 @@
 ---
 # tasks file for ./roles/samba
+- name: Creating samba directory...
+  file:
+    name: /share/samba
+    state: directory
+    mode: 0700
+
+- name: Install samba...
+  package:
+    name: samba
+    state: present
+
+- name: Configure samba...
+  template:
+    src: smb.conf.j2
+    dest: /etc/samba/smb.conf

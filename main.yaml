@@ -1,19 +1,19 @@
 - name: Linux Troubleshooting setup script
   hosts: all
+  become: yes
   roles:
     # - root_password_break  
     # - package_management
     # - user
-    # - network_management
+    - network_management
     # - lvm
     # - luks
-    - apache
+    # - apache
     # - samba
-    # - mysql
     # - ssh
 
   # tasks:
   #   - name: Print network interfaces
   #     ansible.builtin.debug:
-  #       msg: "Network Interface: {{ item }}"
+  #       msg: "{{ ansible_facts.interfaces[0] }}"
   #     loop: "{{ ansible_facts.interfaces }}"

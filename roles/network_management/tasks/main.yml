@@ -2,13 +2,9 @@
 # tasks file for ./roles/network_management
  - name: Try nmcli add team - conn_name only & ip4 gw4
    nmcli:
-    conn_name: my-eth1
-    ifname: ens18
-    type: ethernet
-    ip4: 192.0.1.100/24
-    gw4: 192.0.1.1
+    conn_name: "{{ ansible_facts.interfaces[2] }}"
     dns4: 8.8.8.8
-    state: absent
+    state: present
 
- - name: Activating New connection
-   shell: nmcli connection up my-eth1
+#  - name: Activating New connection
+#    shell: nmcli connection up my-eth1
