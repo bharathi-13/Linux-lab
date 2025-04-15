@@ -4,7 +4,8 @@ package_list:
   - samba
   - samba-common
   - httpd
-  - mariadb
+  - mysql-server
+  - mysql
 
 repolist:
   - baseos

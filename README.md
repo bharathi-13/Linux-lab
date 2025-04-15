@@ -36,3 +36,13 @@ A samba share was configure in this server to share file but after a update the 
 - Username: *student*
 - Password: *Kgm@123*
 
+### LVM Configuration
+
+Create LVM with LUKS encryption for storing the files that the user storing in SAMBA.
+
+**Configuration criteria:**
+
+- 4 nos of 5 GB HDD
+- VG name - samba_vg
+- Create 1 LV of 15 GB with LUKS encryption and EXT4 file system. The LV name should be `<yourname>_lv`
+- Configure the LV to permanently mount on /share/samba
